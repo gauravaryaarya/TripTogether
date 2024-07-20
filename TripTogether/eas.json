@@ -1,0 +1,12 @@
+{
+  "build": {
+    "development": {
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      }
+    }
+  }
+}
