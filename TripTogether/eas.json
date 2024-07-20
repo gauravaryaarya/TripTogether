@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "build": {
       "development": {
         "distribution": "internal",
@@ -32,16 +31,3 @@
     }
   }
   
-=======
-  "build": {
-    "development": {
-      "android": {
-        "image": "latest"
-      },
-      "ios": {
-        "image": "latest"
-      }
-    }
-  }
-}
->>>>>>> ebe722b0bedea686a58b805eb5313b5742db907f
