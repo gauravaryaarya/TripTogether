@@ -1,0 +1,33 @@
+{
+    "build": {
+      "development": {
+        "distribution": "internal",
+        "android": {
+          "buildType": "apk",
+          "image": "latest"
+        },
+        "env": {
+          "API_URL": "https://dev.example.com/api"
+        }
+      },
+      "preview": {
+        "distribution": "internal",
+        "android": {
+          "buildType": "app-bundle"
+        },
+        "env": {
+          "API_URL": "https://preview.example.com/api"
+        }
+      },
+      "production": {
+        "distribution": "store",
+        "android": {
+          "buildType": "app-bundle"
+        },
+        "env": {
+          "API_URL": "https://example.com/api"
+        }
+      }
+    }
+  }
+  

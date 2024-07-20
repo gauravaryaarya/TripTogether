@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "TripTogether",
-    "slug": "TripTogether",
+    "slug": "triptogetherbygauravarya",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -16,6 +16,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.gauravaryaarya.triptogether",
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -31,6 +32,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "b02808bf-cae4-4440-abc8-8f74b6e60eee"
+      }
+    },
+    "owner": "gauravaryaarya"
   }
 }
