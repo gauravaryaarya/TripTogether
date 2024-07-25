@@ -1,4 +1,4 @@
-import { View, Text , StyleSheet, TextInput, TouchableOpacity, ToastAndroid} from 'react-native'
+import { View, Text , StyleSheet, TextInput, TouchableOpacity, ToastAndroid,Image} from 'react-native'
 import React, { useState } from 'react'
 import { useRouter } from 'expo-router'
 import { AntDesign } from '@expo/vector-icons'
@@ -54,8 +54,8 @@ export default function SignUp() {
       <Text style={{
         fontFamily:'outfit-bold',
         fontSize:30,
-        padding:25,
-        marginTop:30,
+        padding:35,
+        marginTop:-20,
         marginLeft:20,   
       }}>
         Create or Regret! 
@@ -64,7 +64,7 @@ export default function SignUp() {
 
         
 
-        <View style={{marginTop:50}}>
+        <View style={{marginTop:-10}}>
       <Text>Full Name</Text>
         <TextInput 
         style={styles.input} 
@@ -76,7 +76,7 @@ export default function SignUp() {
 
        <View
       style={{
-        marginTop:50,
+        marginTop:15,
       }}>
       <Text>E-Mail</Text>
         <TextInput 
@@ -86,7 +86,7 @@ export default function SignUp() {
       </View>
 
 
-      <View style={{marginTop:50}}>
+      <View style={{marginTop:15}}>
       <Text>Password</Text>
         <TextInput secureTextEntry={true} style={styles.input} placeholder='We will keep it safe'
         onChangeText={(value)=>setPassword(value)}/> 
@@ -94,13 +94,16 @@ export default function SignUp() {
       </View>
       <TouchableOpacity onPress={OnCreateAccount} style={{
         padding:15,
-        borderRadius:20,
+        borderRadius:50,
         backgroundColor:'black',
-        marginTop:50,
+        marginTop:15,
+        marginLeft:'19%',
+        width:'60%',
       }}>
         <Text style={{
           color:'white',
           textAlign:'center',
+          
         }}>
           Create New Account
         </Text>
@@ -109,9 +112,9 @@ export default function SignUp() {
       <TouchableOpacity style={{
         padding:15,
         borderRadius:20,
-        borderWidth:1,
+       
         backgroundColor:'white',
-        marginTop:20,
+        marginTop:0,
       }} onPress={() => router.replace('auth/sign-in')}>
         <Text style={{
           color:'black',
@@ -120,6 +123,15 @@ export default function SignUp() {
           Dumb You! Already have an account? Sign In.
         </Text>
       </TouchableOpacity>
+
+      <Image source={require('./../../../../assets/images/plane2.jpg')}
+      style={{
+        width:500,
+        height:300,
+        marginTop:20,
+        marginLeft:0,
+      }}/>
+
     </View> 
   )
 }

@@ -33,15 +33,9 @@ export default function Login() {
         textAlign:'center',
         fontSize:17,
         color:'gray',
-      }}>An  app  to  find  travel buddies  and  plan  trips together......
+      }}>An  app  to  find  travel buddies  and  plan  trips together.</Text>
       
-      <Text style={{
-        color:'violet',
-      }}>
-      Fuck it!
-      </Text>
-      {'\n'}We hope you brought your sense of humor, things are about to get fun!
-      </Text>
+      
 
 
       <TouchableOpacity style={styles.button2}
@@ -54,12 +48,12 @@ export default function Login() {
           textAlign:'center',
           justifyContent:'center',
           marginTop:-5,
-        }}>Let's Go! 🚀</Text>
+        }}>Get Started 🚀</Text>
       </TouchableOpacity>
 
         
 
-      <TouchableOpacity style={styles.button}>
+      {/* <TouchableOpacity style={styles.button}>
         <Image 
         style={{ width:30, height:30}}
         source={require('./../assets/images/loginwithgoogle.png')}></Image>
@@ -70,7 +64,7 @@ export default function Login() {
           justifyContent:'center',
           marginTop:-3,
         }}>Log In With Google</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
 
 
@@ -119,7 +113,7 @@ const styles = StyleSheet.create({
     width:200,
     alignItems:'center',
     marginLeft:95,
-    marginTop:'10%',
+    marginTop:'28%',
     borderWidth:2,
   
    
