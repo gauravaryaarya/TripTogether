@@ -29,7 +29,7 @@ export default function Login() {
 
       <Text style={{
         marginTop:20,
-        fontFamily:'outfit',
+        
         textAlign:'center',
         fontSize:17,
         color:'gray',
@@ -43,7 +43,7 @@ export default function Login() {
         
 
         <Text style={{
-          fontFamily:'outfit',
+          
           fontSize:20,
           textAlign:'center',
           justifyContent:'center',
