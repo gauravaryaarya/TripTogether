@@ -1,10 +1,40 @@
 import { View, Text } from 'react-native'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Ionicons } from '@expo/vector-icons';
+import StartNewTripCard from '../../components/MyTrips/StartNewTripCard';
+import {auth} from './../../app/configs/FirebaseConfig'
 
 export default function MyTrip() {
+
+  const {userTrips,setUserTrips} = useState([]);
+
   return (
-    <View>
-      <Text>MyTrip</Text>
+    <View style={{
+      padding:25,
+      paddingTop:55,
+      backgroundColor:'white',
+      height:'100%',
+    }}>
+
+      <View style={{display:'flex',flexDirection:'row',
+        alignItems:'center',
+        justifyContent:'space-between'
+      }}>
+        <Text style={{
+          fontFamily:'outfit-bold',
+          fontSize:35,
+          padding:30,
+          marginTop:-20,
+  
+        }}>My Trips</Text>
+        <Ionicons name="add-circle" size={50} color="black" />
+      </View>
+
+        {userTrips?.length == 0 ?
+          <StartNewTripCard/>
+          :null
+        }
+
     </View>
   )
 }
