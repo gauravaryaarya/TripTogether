@@ -1,7 +1,7 @@
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native'
 import React from 'react'
 import { useRouter } from 'expo-router'
-
+import {auth} from './../app/configs/FirebaseConfig'
 
 export default function Login() {
 

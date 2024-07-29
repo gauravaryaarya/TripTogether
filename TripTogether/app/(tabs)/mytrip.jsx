@@ -6,7 +6,7 @@ import {auth} from './../../app/configs/FirebaseConfig'
 
 export default function MyTrip() {
 
-  const {userTrips,setUserTrips} = useState([]);
+  const {userTrips,setUserTrips} =useState([]);
 
   return (
     <View style={{
@@ -16,24 +16,29 @@ export default function MyTrip() {
       height:'100%',
     }}>
 
-      <View style={{display:'flex',flexDirection:'row',
+      <View style={{
+        display:'flex',
+      flexDirection:'row',
         alignItems:'center',
         justifyContent:'space-between'
       }}>
         <Text style={{
           fontFamily:'outfit-bold',
-          fontSize:35,
-          padding:30,
-          marginTop:-20,
-  
+          fontSize:35
         }}>My Trips</Text>
         <Ionicons name="add-circle" size={50} color="black" />
       </View>
 
-        {userTrips?.length == 0 ?
-          <StartNewTripCard/>
-          :null
-        }
+        <StartNewTripCard/>
+
+        
+        {/* {userTrips?.length==0?
+        <StartNewTripCard />
+        :null
+      } */}
+
+       {/* need to be added above */}
+      
 
     </View>
   )
