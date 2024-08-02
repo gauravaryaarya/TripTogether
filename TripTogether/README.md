@@ -1,4 +1,5 @@
 # Welcome to your Expo app 👋
+Follow Now On LinkedIn: https://www.linkedin.com/in/gaurav-arya-4321041a6/
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
